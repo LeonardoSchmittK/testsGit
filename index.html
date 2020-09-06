@@ -11,8 +11,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="jumbotron">
-     <h1>Hello </h1>
-   </div>
+   <div class="jumbotron text-center ">
+     <h1>Hello</h1>
+   </div> 
+   <div class="container bg-primary rounded p-5">
+     <div class="row pointer">
+       <div class="col-sm-4">
+
+         <h3>Col-sm-4</h3>
+         <p class='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam delectus a odio, vel fuga autem dignissimos nihil dolores quidem nemo, debitis consequuntur inventore alias quia possimus voluptatem similique eum.</p>
+       </div>
+       <div class="col-sm-4">
+        <h3>Col-sm-4</h3>
+        <p class='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam delectus a odio, vel fuga autem dignissimos nihil dolores quidem nemo, debitis consequuntur inventore alias quia possimus voluptatem similique eum.</p>
+      </div>
+      <div class="col-sm-4 bg-dark text-white">
+       <h3>Col-sm-4</h3>
+       <p class='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam delectus a odio, vel fuga autem dignissimos nihil dolores quidem nemo, debitis consequuntur inventore alias quia possimus voluptatem similique eum.</p>
+     </div>
+     </div>
+   </div> 
+
+   <script>
+     $().ready(()=>{
+       $('.row').click(()=>{
+        $('.text-justify:even').fadeToggle();
+       })
+        
+        
+        
+     })
+   </script>
 </body>
 </html>
